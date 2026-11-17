@@ -35,13 +35,17 @@ To leave keyword mode, press <kbd>Backspace</kbd> at the start of the text, or <
 <summary><b>Windows</b></summary>
 <br>
 
-Download this repository as a ZIP and extract it (or clone it), then open PowerShell in that folder and run:
+Open PowerShell and run:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\install.ps1
+irm https://raw.githubusercontent.com/fizzyhex/vivaldi-bangs/main/install.ps1 | iex
 ```
 
-Restart Vivaldi and your bangs are ready. To uninstall, run the same command with `-Uninstall` at the end, then restart Vivaldi again.
+Restart Vivaldi and your bangs are ready. To uninstall, run this instead, then restart Vivaldi again:
+
+```powershell
+& ([scriptblock]::Create((irm https://raw.githubusercontent.com/fizzyhex/vivaldi-bangs/main/install.ps1))) -Uninstall
+```
 
 </details>
 
@@ -49,28 +53,22 @@ Restart Vivaldi and your bangs are ready. To uninstall, run the same command wit
 <summary><b>Linux</b></summary>
 <br>
 
-These steps are for the standard `.deb` or `.rpm` install of Vivaldi in `/opt/vivaldi`; Snap and Flatpak installs aren't supported.
-
-Download this repository as a ZIP and extract it (or clone it), then open a terminal in that folder and run:
+This works with the standard `.deb` or `.rpm` install of Vivaldi in `/opt/vivaldi`; Snap and Flatpak installs aren't supported. Open a terminal and run:
 
 ```sh
-V=/opt/vivaldi/resources/vivaldi
-sudo cp helium-bangs.js "$V/"
-grep -q helium-bangs.js "$V/window.html" || sudo sed -i 's#</body>#  <script src="helium-bangs.js"></script>\n</body>#' "$V/window.html"
+curl -fsSL https://raw.githubusercontent.com/fizzyhex/vivaldi-bangs/main/install.sh | sudo bash
 ```
 
-Restart Vivaldi and your bangs are ready. To uninstall, remove the file and the line it added, then restart Vivaldi again:
+Restart Vivaldi and your bangs are ready. To uninstall, run this instead, then restart Vivaldi again:
 
 ```sh
-V=/opt/vivaldi/resources/vivaldi
-sudo rm "$V/helium-bangs.js"
-sudo sed -i '/helium-bangs.js/d' "$V/window.html"
+curl -fsSL https://raw.githubusercontent.com/fizzyhex/vivaldi-bangs/main/install.sh | sudo bash -s -- --uninstall
 ```
 
 </details>
 
 > [!IMPORTANT]
-> **Install again after every Vivaldi update.** Updates replace the modified file, and bangs stop working until you do.
+> **Run the install command again after every Vivaldi update.** Updates replace the modified file, and bangs stop working until you do.
 
 ## Privacy
 
