@@ -95,3 +95,10 @@ Open `helium-bangs.js`, change the options at the top, then run the installer ag
 
 - [Helium](https://github.com/imputnet/helium) by imput, for the original bangs feature and the bang service.
 - [Kagi's bang list](https://github.com/kagisearch/bangs) (MIT), where the bangs come from.
+
+---
+
+<p align="center">
+  <a href="https://a90.com/experiments/88x31/"><img src="https://a90.com/experiments/88x31/injection.gif" width="88" height="31" alt="Free prompt injections, walk-ins welcome"></a>
+  <a href="https://a90.com/experiments/88x31/"><img src="https://a90.com/experiments/88x31/moat.gif" width="88" height="31" alt="Our moat: a .md file. Valuation: $2B"></a>
+</p>
