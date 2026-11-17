@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/kagisearch/bangs"><img src="https://img.shields.io/badge/13%2C000%2B_sites-ef3939?style=flat-square" alt="13,000+ sites"></a>
-  <a href="https://github.com/imputnet/helium-services/tree/main/svc/bangs"><img src="https://img.shields.io/badge/%F0%9F%92%96_Powered_by_Helium%27s_Bangs_Service-2b2b2b?style=flat-square" alt="Powered by Helium's Bangs Service"></a>
+  <a href="https://github.com/imputnet/helium-services/tree/main/svc/bangs">
   <a href="LICENSE"><img src="https://img.shields.io/badge/MIT-3d7bd9?style=flat-square" alt="MIT licence"></a>
   <a href="https://github.com/fizzyhex/vivaldi-bangs/stargazers"><img src="https://img.shields.io/github/stars/fizzyhex/vivaldi-bangs?style=flat-square&label=stars&color=e3b341" alt="GitHub stars"></a>
   <a href="https://github.com/fizzyhex/vivaldi-bangs/issues"><img src="https://img.shields.io/github/issues/fizzyhex/vivaldi-bangs?style=flat-square&label=issues&color=8957e5" alt="GitHub issues"></a>
