@@ -26,13 +26,14 @@ without going through your default search engine first.
 
 To leave keyword mode, press <kbd>Backspace</kbd> at the start of the text, or <kbd>Esc</kbd>.
 
-> [!TIP]
-> If one of your Vivaldi search engines already uses a nickname like `!w`, your own engine always takes priority.
-
 ## Install
 
 > [!WARNING]
 > This changes Vivaldi's own files. It's a common way to mod Vivaldi, but it's at your own risk, and a future Vivaldi version could break it.
+
+<details>
+<summary><b>Windows</b></summary>
+<br>
 
 1. Download this repository as a ZIP and extract it, or clone it.
 2. In the extracted folder, open PowerShell and run:
@@ -43,14 +44,40 @@ To leave keyword mode, press <kbd>Backspace</kbd> at the start of the text, or <
 
 3. Restart Vivaldi.
 
-> [!IMPORTANT]
-> **Run the installer again after every Vivaldi update.** Updates replace the modified file, and bangs stop working until you do.
+To uninstall, run the same command with `-Uninstall` at the end, then restart Vivaldi.
 
-To uninstall, run `install.ps1 -Uninstall` the same way, then restart Vivaldi.
+</details>
+
+<details>
+<summary><b>Linux</b></summary>
+<br>
+
+1. Download this repository as a ZIP and extract it, or clone it.
+2. In the extracted folder, open a terminal and run:
+
+   ```sh
+   V=/opt/vivaldi/resources/vivaldi
+   sudo cp helium-bangs.js "$V/"
+   grep -q helium-bangs.js "$V/window.html" || sudo sed -i 's#</body>#  <script src="helium-bangs.js"></script>\n</body>#' "$V/window.html"
+   ```
+
+3. Restart Vivaldi.
+
+To uninstall:
+
+```sh
+V=/opt/vivaldi/resources/vivaldi
+sudo rm "$V/helium-bangs.js"
+sudo sed -i '/helium-bangs.js/d' "$V/window.html"
+```
 
 > [!NOTE]
-> The installer is for Windows. On macOS or Linux, copy `helium-bangs.js` into Vivaldi's `resources/vivaldi` folder,
-> and add `<script src="helium-bangs.js"></script>` before `</body>` in `window.html`.
+> These steps are for the standard `.deb` / `.rpm` install in `/opt/vivaldi`. Snap and Flatpak installs aren't supported.
+
+</details>
+
+> [!IMPORTANT]
+> **Install again after every Vivaldi update.** Updates replace the modified file, and bangs stop working until you do.
 
 ## Privacy
 
