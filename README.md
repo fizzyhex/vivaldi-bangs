@@ -9,6 +9,12 @@ without going through your default search engine first.
   <img src="assets/demo.webp" alt="Typing bangs in Vivaldi's address bar: !gh turns into a Search GitHub chip, then a quickfire of !w, !yt, !r and !imdb" width="820">
 </p>
 
+<p align="center">
+  <a href="https://github.com/kagisearch/bangs"><img src="https://img.shields.io/badge/13%2C000%2B_bangs-ef3939?style=flat-square" alt="13,000+ bangs"></a>
+  <a href="https://github.com/imputnet/helium-services/tree/main/svc/bangs"><img src="https://img.shields.io/badge/%F0%9F%92%96_Powered_by_Helium%27s_Bangs_Service-2b2b2b?style=flat-square" alt="Powered by Helium's Bangs Service"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/MIT-3d7bd9?style=flat-square" alt="MIT licence"></a>
+</p>
+
 > [!NOTE]
 > This brings the native bangs from the [Helium browser](https://github.com/imputnet/helium) to Vivaldi.
 > It's an unofficial project, not affiliated with Helium or Vivaldi.
