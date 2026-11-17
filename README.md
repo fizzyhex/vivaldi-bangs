@@ -1,4 +1,4 @@
-# vivaldi bangs
+<h1 align="center">vivaldi bangs</h1>
 
 <p align="center">
   <img src="assets/demo.webp" alt="Typing bangs in Vivaldi's address bar: !gh turns into a Search GitHub chip, then a quickfire of !w, !yt, !r and !imdb" width="820">
@@ -8,12 +8,21 @@
   <a href="https://github.com/kagisearch/bangs"><img src="https://img.shields.io/badge/13%2C000%2B_sites-ef3939?style=flat-square" alt="13,000+ sites"></a>
   <a href="https://github.com/imputnet/helium-services/tree/main/svc/bangs"><img src="https://img.shields.io/badge/%F0%9F%92%96_Powered_by_Helium%27s_Bangs_Service-2b2b2b?style=flat-square" alt="Powered by Helium's Bangs Service"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/MIT-3d7bd9?style=flat-square" alt="MIT licence"></a>
+  <a href="https://github.com/fizzyhex/vivaldi-bangs/stargazers"><img src="https://img.shields.io/github/stars/fizzyhex/vivaldi-bangs?style=flat-square&label=stars&color=e3b341" alt="GitHub stars"></a>
+  <a href="https://github.com/fizzyhex/vivaldi-bangs/issues"><img src="https://img.shields.io/github/issues/fizzyhex/vivaldi-bangs?style=flat-square&label=issues&color=8957e5" alt="GitHub issues"></a>
 </p>
 
-**Helium's bangs inside of Vivaldi!**
+<p align="center"><b>Helium's bangs inside of Vivaldi!</b></p>
 
-Search any site straight from the address bar. Type `!yt sam altmon eating ram` and you land on YouTube's results,
-without going through your default search engine first.
+<p align="center">
+  Search any site straight from the address bar. Type <code>!yt sam altmon eating ram</code> and you land on YouTube's results,<br>
+  without going through your default search engine first.
+</p>
+
+<p align="center">
+  <a href="https://a90.com/experiments/88x31/"><img src="assets/88x31-injection.gif" width="94" height="37" alt="Free prompt injections, walk-ins welcome"></a>
+  <a href="https://a90.com/experiments/88x31/"><img src="assets/88x31-moat.gif" width="94" height="37" alt="Our moat: a .md file. Valuation: $2B"></a>
+</p>
 
 ## How to use
 
@@ -96,9 +105,3 @@ Open `helium-bangs.js`, change the options at the top, then run the installer ag
 - [Helium](https://github.com/imputnet/helium) by imput, for the original bangs feature and the bang service.
 - [Kagi's bang list](https://github.com/kagisearch/bangs) (MIT), where the bangs come from.
 
----
-
-<p align="center">
-  <a href="https://a90.com/experiments/88x31/"><img src="https://a90.com/experiments/88x31/injection.gif" width="88" height="31" alt="Free prompt injections, walk-ins welcome"></a>
-  <a href="https://a90.com/experiments/88x31/"><img src="https://a90.com/experiments/88x31/moat.gif" width="88" height="31" alt="Our moat: a .md file. Valuation: $2B"></a>
-</p>
