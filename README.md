@@ -12,7 +12,7 @@
 
 **Helium's bangs inside of Vivaldi!**
 
-Search any site straight from the address bar. Type `!yt lofi beats` and you land on YouTube's results,
+Search any site straight from the address bar. Type `!yt sam altmon eating ram` and you land on YouTube's results,
 without going through your default search engine first.
 
 ## How to use
