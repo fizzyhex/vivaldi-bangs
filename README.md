@@ -35,16 +35,13 @@ To leave keyword mode, press <kbd>Backspace</kbd> at the start of the text, or <
 <summary><b>Windows</b></summary>
 <br>
 
-1. Download this repository as a ZIP and extract it, or clone it.
-2. In the extracted folder, open PowerShell and run:
+Download this repository as a ZIP and extract it (or clone it), then open PowerShell in that folder and run:
 
-   ```powershell
-   powershell -ExecutionPolicy Bypass -File .\install.ps1
-   ```
+```powershell
+powershell -ExecutionPolicy Bypass -File .\install.ps1
+```
 
-3. Restart Vivaldi.
-
-To uninstall, run the same command with `-Uninstall` at the end, then restart Vivaldi.
+Restart Vivaldi and your bangs are ready. To uninstall, run the same command with `-Uninstall` at the end, then restart Vivaldi again.
 
 </details>
 
@@ -52,27 +49,23 @@ To uninstall, run the same command with `-Uninstall` at the end, then restart Vi
 <summary><b>Linux</b></summary>
 <br>
 
-1. Download this repository as a ZIP and extract it, or clone it.
-2. In the extracted folder, open a terminal and run:
+These steps are for the standard `.deb` or `.rpm` install of Vivaldi in `/opt/vivaldi`; Snap and Flatpak installs aren't supported.
 
-   ```sh
-   V=/opt/vivaldi/resources/vivaldi
-   sudo cp helium-bangs.js "$V/"
-   grep -q helium-bangs.js "$V/window.html" || sudo sed -i 's#</body>#  <script src="helium-bangs.js"></script>\n</body>#' "$V/window.html"
-   ```
+Download this repository as a ZIP and extract it (or clone it), then open a terminal in that folder and run:
 
-3. Restart Vivaldi.
+```sh
+V=/opt/vivaldi/resources/vivaldi
+sudo cp helium-bangs.js "$V/"
+grep -q helium-bangs.js "$V/window.html" || sudo sed -i 's#</body>#  <script src="helium-bangs.js"></script>\n</body>#' "$V/window.html"
+```
 
-To uninstall:
+Restart Vivaldi and your bangs are ready. To uninstall, remove the file and the line it added, then restart Vivaldi again:
 
 ```sh
 V=/opt/vivaldi/resources/vivaldi
 sudo rm "$V/helium-bangs.js"
 sudo sed -i '/helium-bangs.js/d' "$V/window.html"
 ```
-
-> [!NOTE]
-> These steps are for the standard `.deb` / `.rpm` install in `/opt/vivaldi`. Snap and Flatpak installs aren't supported.
 
 </details>
 
