@@ -1,32 +1,19 @@
 # vivaldi bangs
 
-**Helium's bangs inside of Vivaldi!**
-
-Search any site straight from the address bar. Type `!yt lofi beats` and you land on YouTube's results,
-without going through your default search engine first.
-
 <p align="center">
   <img src="assets/demo.webp" alt="Typing bangs in Vivaldi's address bar: !gh turns into a Search GitHub chip, then a quickfire of !w, !yt, !r and !imdb" width="820">
 </p>
 
 <p align="center">
-  <a href="https://github.com/kagisearch/bangs"><img src="https://img.shields.io/badge/13%2C000%2B_bangs-ef3939?style=flat-square" alt="13,000+ bangs"></a>
+  <a href="https://github.com/kagisearch/bangs"><img src="https://img.shields.io/badge/13%2C000%2B_sites-ef3939?style=flat-square" alt="13,000+ sites"></a>
   <a href="https://github.com/imputnet/helium-services/tree/main/svc/bangs"><img src="https://img.shields.io/badge/%F0%9F%92%96_Powered_by_Helium%27s_Bangs_Service-2b2b2b?style=flat-square" alt="Powered by Helium's Bangs Service"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/MIT-3d7bd9?style=flat-square" alt="MIT licence"></a>
 </p>
 
-> [!NOTE]
-> This brings the native bangs from the [Helium browser](https://github.com/imputnet/helium) to Vivaldi.
-> It's an unofficial project, not affiliated with Helium or Vivaldi.
+**Helium's bangs inside of Vivaldi!**
 
-## Features
-
-- **13,000+ bangs**: `!w` Wikipedia, `!gh` GitHub, `!yt` YouTube, `!r` Reddit, `!a` Amazon, `!imdb`, `!so`, and many more.
-- **Bangs anywhere**: `!gh react`, `react !gh` and `react !gh hooks` all work.
-- **Keyword mode**: type a bang and press <kbd>Space</kbd>, and it becomes a chip like **Search GitHub**. Then just type your search.
-- **Suggestions**: start typing `!` to see matching bangs, and press <kbd>Tab</kbd> to pick the top one.
-- **AI chatbots** like `!kai`, `!chatgpt` and `!claude` get an **Ask …** chip.
-- **Native feel**: uses your theme's colours, follows Vivaldi's animation setting, and works with your usual new-tab and background-tab shortcuts.
+Search any site straight from the address bar. Type `!yt lofi beats` and you land on YouTube's results,
+without going through your default search engine first.
 
 ## How to use
 
@@ -77,6 +64,14 @@ Open `helium-bangs.js`, change the options at the top, then run the installer ag
 
 - `enabled`: turn bangs on or off.
 - `servicesOrigin`: use your own [self-hosted Helium services](https://github.com/imputnet/helium-services) for the list.
+
+## Details
+
+- **Bangs anywhere**: `!gh react`, `react !gh` and `react !gh hooks` all work.
+- **Keyword mode**: type a bang and press <kbd>Space</kbd>, and it becomes a chip like **Search GitHub**. Then just type your search.
+- **Suggestions**: start typing `!` to see matching bangs, and press <kbd>Tab</kbd> to pick the top one.
+- **AI chatbots** like `!kai`, `!chatgpt` and `!claude` get an **Ask …** chip.
+- **Native feel**: uses your theme's colours, follows Vivaldi's animation setting, and works with your usual new-tab and background-tab shortcuts.
 
 ## Credits
 
